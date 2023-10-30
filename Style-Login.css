@@ -1,0 +1,204 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-image: url('dwinanda-nurhanif-mujito-pKT5Mg16w_w-unsplash.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    height: 100vh;
+    position: relative;
+}
+
+.kotak{
+    background-color: white;
+    height: 540px;
+    width: 450px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 2%;
+}
+
+.logo{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    font-size: 24px;
+    font-family: var(--font-josefin-sans);
+    margin-top: 5%;
+    margin-bottom: auto;
+}
+
+.gambar-logo{
+    position: relative;
+    width: 30px;
+    height: 33px;
+}
+
+.traveleen{
+    position: relative;
+    line-height: 150%;
+}
+
+.masuk{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-top: 4%;
+    gap: 9px;
+    font-size: 48px;
+    position: relative;
+    font-family: var(--base-semi-bold);
+    line-height: 140%;
+}
+
+.nama{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    align-self: stretch;
+    position: relative;
+    font-size: 18px;
+    line-height: 150%;
+    font-weight: 600;
+    color: #737373;
+    text-align: center;
+    font-family: var(--base-semi-bold);
+}
+
+.label{
+    position: relative;
+    line-height: 20px;
+    font-weight: 500;
+    display: inline-block;
+    width: 400px;
+    margin-top: 6%;
+    font-family: var(--base-semi-bold);
+}
+
+.input {
+    width: 87%;
+    display: flex;
+    justify-content: center;
+    border-radius: 12px;
+    background-color: white;
+    border: 1px solid #737373;
+    box-sizing: border-box;
+    height: 42px;
+    flex-direction: row;
+    align-items: center;
+    padding: 8px 12px;
+    font-size: 16px;
+    color: #737373;
+}
+
+.input-username {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    justify-content: center; 
+    gap: 7px;
+}
+
+.input-password {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    justify-content: center;
+    gap: 7px;
+    position: relative;
+}
+
+.input2-wrapper {
+    display: flex;
+    align-items: center;
+    position: relative;
+    width: 87%; 
+}
+
+.input2 {
+    border-radius: 12px;
+    background-color: white;
+    border: 1px solid #737373;
+    box-sizing: border-box;
+    height: 42px;    
+    padding: 8px 12px;
+    color: #737373;
+    position: relative;
+    width: 100%; 
+}
+
+.mata-tutup {
+    position: absolute;
+    right: 10px; 
+    top: 50%; 
+    transform: translateY(-50%); 
+    width: 24px;
+    height: 24px;
+}
+
+.ingat-saya{
+    margin-left: 6%;
+    margin-top: 6%;
+    font-family: var(--base-semi-bold);
+}
+
+.lupa{
+    margin-left: 160px;
+    color: black;
+    text-decoration: none;
+    font-family: var(--base-semi-bold);
+}
+
+.tombol-masuk {
+    border-radius: 6px;
+    display: flex;
+    justify-content: center;
+    height: 10%;
+    margin-top: 2%;
+}
+
+.tombol-masuk button {
+    background-color: #10b981;
+    width: 87%;
+    border: none;
+    border-radius: 6px;
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.tombol-masuk button:hover {
+    background-color: #0a8c73;
+}
+
+.signup{
+    margin-top: 4%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-self: stretch;
+    position: relative;
+    font-size: 16px;
+    line-height: 150%;
+    font-weight: 600;
+    color: #737373;
+    text-align: center;
+    font-family: var(--base-semi-bold);
+}
+
+.signup a{
+    text-decoration: none;
+    color: #10b981;
+}
+
+:root{
+    --base-semi-bold: Inter;
+    --font-josefin-sans: "Josefin Sans";
+}

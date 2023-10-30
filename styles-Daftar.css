@@ -1,0 +1,283 @@
+body{
+  margin: 0;
+  padding: 0;
+  background-image: url('signup.png');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  height: 100vh;
+  position: relative;
+}
+
+.logo-icon {
+  position: relative;
+  width: 33px;
+  height: 33px;
+}
+
+.traveleen {
+  position: relative;
+  line-height: 150%;
+}
+
+.logo-parent {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 12px;
+  font-size: 24px;
+  font-family: var(--font-josefin-sans);
+}
+
+.daftar {
+  position: relative;
+  line-height: 140%;
+}
+
+.muhamadirkhammaulana {
+  align-self: stretch;
+  position: relative;
+  font-size: var(--lg-semi-bold-size);
+  line-height: 150%;
+  font-weight: 600;
+  color: var(--neutral-500);
+  text-align: center;
+}
+
+.daftar-parent {
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  gap: var(--gap-9xs);
+  font-size: var(--xl-bold-size);
+}
+
+.label {
+  position: relative;
+  line-height: 20px;
+  font-weight: 500;
+  display: inline-block;
+  width: 436px;
+}
+
+.placeholder {
+  flex: 1;
+  position: relative;
+  line-height: 150%;
+}
+
+.input,
+.input-field {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.input {
+  align-self: stretch;
+  border-radius: var(--br-xs);
+  background-color: var(--white);
+  border: 1px solid var(--neutral-500);
+  box-sizing: border-box;
+  height: 42px;
+  flex-direction: row;
+  align-items: center;
+  padding: var(--padding-5xs) var(--padding-xs);
+  font-size: var(--base-semi-bold-size);
+  color: var(--neutral-500);
+}
+
+.input-field {
+  width: 436px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: var(--gap-6xs);
+}
+
+.input-password {
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+  justify-content: center;
+  gap: 7px;
+  position: relative;
+}
+
+.input2-wrapper {
+  display: flex;
+  align-items: center;
+  position: relative;
+  width: 100%; 
+}
+
+.input2 {
+  border-radius: 12px;
+  background-color: white;
+  border: 1px solid #737373;
+  box-sizing: border-box;
+  height: 42px;    
+  padding: 8px 12px;
+  color: #737373;
+  position: relative;
+  width: 100%; 
+}
+
+.mata-tutup {
+  position: absolute;
+  right: 10px; 
+  top: 50%; 
+  transform: translateY(-50%); 
+  width: 24px;
+  height: 24px;
+}
+
+.pakai-kata-sandi {
+  position: absolute;
+  left: 0;
+  width: 436px;
+}
+
+.pakai-kata-sandi {
+  top: 73px;
+  line-height: 130%;
+  color: var(--neutral-500);
+  display: inline-block;
+}
+
+.input-field-parent {
+  position: relative;
+  width: 436px;
+  height: 109px;
+}
+
+.dengan-mengklik-daftar,
+.text {
+  position: relative;
+  line-height: 150%;
+}
+
+.dengan-mengklik-daftar {
+  display: inline-block;
+  width: 436px;
+}
+
+.text {
+  font-weight: 600;
+}
+
+.button {
+    border-radius: 6px;
+    display: flex;
+    justify-content: center;
+    height: 10%;
+    margin-top: 2%;
+}
+
+.button button{
+    background-color: #10b981;
+    width: 440px;
+    height: 50px;
+    border: none;
+    border-radius: 6px;
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.button button:hover{
+  background-color: #059669;
+}
+
+.dengan-mengklik-daftar-kamu-m-parent {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: var(--gap-9xs);
+    text-align: justify;
+    font-size: var(--base-semi-bold-size);
+    color: var(--neutral-500);
+}
+
+.span {
+    color: var(--neutral-900);
+}
+
+.masuk {
+    color: #059669;
+}
+
+.sudah-punya-akun-container {
+  position: relative;
+  font-size: var(--base-semi-bold-size);
+  line-height: 150%;
+  font-weight: 600;
+  text-align: center;
+  color: var(--neutral-500);
+}
+
+.frame-parent {
+  position: absolute;
+  top: calc(50% - 418.5px);
+  left: calc(50% - 242px);
+  border-radius: 8px;
+  background-color: var(--white);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 24px;
+  gap: 24px;
+}
+
+.signup {
+  position: relative;
+  width: 100%;
+  height: 1024px;
+  overflow-y: auto;
+  background-image: url(./public/signup@3x.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
+  text-align: left;
+  font-size: var(--text-sm-medium-size);
+  color: var(--neutral-900);
+  font-family: var(--base-semi-bold);
+}
+
+.teks-masuk{
+  color: #10b981;
+  text-decoration: none;
+}
+
+body {
+  margin: 0;
+  line-height: normal;
+}
+
+:root {
+  --base-semi-bold: Inter;
+  --font-josefin-sans: "Josefin Sans";
+
+  --base-semi-bold-size: 16px;
+  --text-sm-medium-size: 14px;
+  --lg-semi-bold-size: 18px;
+  --xl-bold-size: 48px;
+
+  --white: #fff;
+  --neutral-900: #171717;
+  --neutral-500: #737373;
+  --emerald-500: #10b981;
+
+  --gap-9xs: 4px;
+  --gap-6xs: 7px;
+  --gap-3xs: 10px;
+
+  --padding-xs: 12px;
+  --padding-5xs: 8px;
+
+  --br-xs: 12px;
+}
