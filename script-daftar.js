@@ -4,7 +4,7 @@ document.addEventListener('DOMContentLoaded', function () {
   const usernameInput = document.querySelector('.input[type="text"]');
   const registerButton = document.getElementById('tombolSaya');
   const masukLink = document.querySelector('.teks-masuk');
-  const successMessage = document.getElementById('success-message'); // Menambahkan elemen pesan sukses
+  const successMessage = document.getElementById('success-message');
 
   mataTutup.forEach((icon, index) => {
     icon.addEventListener('click', () => {
@@ -16,36 +16,39 @@ document.addEventListener('DOMContentLoaded', function () {
         icon.src = 'outlineeyeoff.png';
       }
     });
-  });
 
-  usernameInput.addEventListener('input', () => {
-    const usernameValue = usernameInput.value;
-    const lowercaseRegex = /^[a-z]+$/;
+    usernameInput.addEventListener('input', () => {
+      const usernameValue = usernameInput.value;
+      const lowercaseRegex = /^[a-z]+$/;
 
-    if (!lowercaseRegex.test(usernameValue)) {
-      usernameInput.value = usernameValue.toLowerCase();
-    }
-  });
+      if (!lowercaseRegex.test(usernameValue)) {
+        usernameInput.value = usernameValue.toLowerCase();
+      }
+    });
 
-  registerButton.addEventListener('click', () => {
-    const username = document.querySelector('.input[type="text"]').value;
-    const password = document.querySelectorAll('.input2[type="password"]')[0].value;
-    const confirmPassword = document.querySelectorAll('.input2[type="password"]')[1].value;
+    registerButton.addEventListener('click', () => {
+      const username = usernameInput.value;
+      const password = passwordInputs[0].value;
+      const confirmPassword = passwordInputs[1].value;
 
-    if (password === confirmPassword) {
-      successMessage.textContent = 'Akun berhasil dibuat! Silakan login.';
-      successMessage.style.color = '#10b981';
+      if (password === confirmPassword) {
+        const userAccounts = JSON.parse(localStorage.getItem('userAccounts')) || {};
+        userAccounts[username] = password;
+        localStorage.setItem('userAccounts', JSON.stringify(userAccounts));
 
-      // Menambahkan penundaan sebelum mengarahkan ke halaman login
-      setTimeout(function() {
-        window.location.href = 'Login.html';
-      }, 2000);
-    } else {
-      alert('Kata sandi dan konfirmasi kata sandi tidak sesuai.');
-    }
-  });
+        successMessage.textContent = 'Akun berhasil dibuat! Silakan login.';
+        successMessage.style.color = '#10b981';
 
-  masukLink.addEventListener('click', () => {
-    window.location.href = 'Login.html';
+        setTimeout(function() {
+          window.location.href = 'Login.html';
+        }, 2000);
+      } else {
+        alert('Kata sandi dan konfirmasi kata sandi tidak sesuai.');
+      }
+    });
+
+    masukLink.addEventListener('click', () => {
+      window.location.href = 'Login.html';
+    });
   });
 });
